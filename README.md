@@ -69,6 +69,28 @@ Make sure both **Spark** and **Hadoop** binaries are included in your system's `
 ```bash
 export PATH=$PATH:$SPARK_HOME/bin:$HADOOP_HOME/bin
 
+## AWS S3 Configuration for Airflow
+
+To upload data to AWS S3, you need to configure the AWS S3 connection in Airflow. Follow these steps:
+
+1. Open the Airflow UI at `http://localhost:8080`.
+2. Go to the **Admin > Connections** section.
+3. Click **"+"** to add a new connection.
+4. In the **Add Connection** form, enter the following:
+   - **Connection Id**: `aws_default`
+   - **Connection Type**: `Amazon Web Services`
+   - **Login**: Your AWS Access Key ID
+   - **Password**: Your AWS Secret Access Key
+   - **Extra**: 
+     ```json
+     {
+       "region_name": "your_region"
+     }
+     ```
+5. Click **Save** to save the connection.
+
+For more detailed information on setting up Airflow with AWS, [check this tutorial](https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/connections/aws.html).
+
 ## Usage
 
 Before starting Airflow, make sure to export the necessary environment variable for Airflow:
