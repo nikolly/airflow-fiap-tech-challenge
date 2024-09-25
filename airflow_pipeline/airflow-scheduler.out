@@ -1,0 +1,15 @@
+[2024-09-23T15:19:36.820-0300] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-09-23T15:19:37.094-0300] {scheduler_job_runner.py:935} INFO - Starting the scheduler
+[2024-09-23T15:19:37.095-0300] {scheduler_job_runner.py:942} INFO - Processing each file at most -1 times
+[2024-09-23T15:19:37.101-0300] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 43131
+[2024-09-23T15:19:37.103-0300] {scheduler_job_runner.py:1847} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2024-09-23T15:19:37.112-0300] {settings.py:63} INFO - Configured default timezone Timezone('UTC')
+[2024-09-23T15:19:37.149-0300] {manager.py:406} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[2024-09-23T15:20:10.539-0300] {scheduler_job_runner.py:260} INFO - Exiting gracefully upon receiving signal 15
+[2024-09-23T15:20:10.914-0300] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 43131. PIDs of all processes in the group: []
+[2024-09-23T15:20:10.916-0300] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 43131
+[2024-09-23T15:20:10.918-0300] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 43131 as process group is missing.
+[2024-09-23T15:20:10.942-0300] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 43131. PIDs of all processes in the group: []
+[2024-09-23T15:20:10.943-0300] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 43131
+[2024-09-23T15:20:10.944-0300] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 43131 as process group is missing.
+[2024-09-23T15:20:10.945-0300] {scheduler_job_runner.py:1014} INFO - Exited execute loop
