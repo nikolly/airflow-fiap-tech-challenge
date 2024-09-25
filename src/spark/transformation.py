@@ -33,7 +33,6 @@ def export_parquet(df, dest):
     temp_file = glob.glob(os.path.join(dest, "part-*"))[0]
     final_file = os.path.join(dest, f"openweather_{os.path.basename(dest).split('=')[1]}.parquet") 
 
-    # Move o arquivo para o destino final
     shutil.move(temp_file, final_file)
     
     
